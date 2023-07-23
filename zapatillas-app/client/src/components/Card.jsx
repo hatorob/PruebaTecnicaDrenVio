@@ -1,5 +1,5 @@
 const Card = ({name, nombre, brand, price, specialPrices}) => {
-    console.log(specialPrices);
+    //console.log(specialPrices);
     return ( 
         <div className=" bg-green-300 p-7 rounded-xl shadow-lg flex flex-col">
             {

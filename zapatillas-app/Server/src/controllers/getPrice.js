@@ -3,7 +3,7 @@ const {connect} = require("../database/connectdb");
 const getPrice = async(req,res) => {
     const { id, name_product } = req.params;
 
-    console.log("id",id,"name", name_product);
+    //console.log("id",id,"name", name_product);
 
     try {
         const data = await connect(id);
@@ -18,7 +18,7 @@ const getPrice = async(req,res) => {
             if(search[0]?.precioBase) price = search[0]?.precioBase;
             if(search[0]?.specialPrices) price = search[0]?.specialPrices;
         }
-        console.log("precio",price);
+        //console.log("precio",price);
         return res.status(200).json(price)
     } catch(error) {
         console.log(error);

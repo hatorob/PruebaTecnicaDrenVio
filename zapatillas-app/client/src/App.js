@@ -43,8 +43,8 @@ function App() {
     dispatch(getPrice(formData.id, formData.name));
   }
   
-  console.log("productsData",productsData);
-  console.log("price",price);
+ /*  console.log("productsData",productsData);
+  console.log("price",price); */
 
   return (
     <div className="App">
